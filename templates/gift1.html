@@ -1,0 +1,25 @@
+{%load static%}
+{% load humanize %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GIFT-1</title>
+    <link rel="stylesheet" href="{%static 'css/gift1.css'%}" />
+  </head>
+  <body>
+
+    <div class="totalcontainer">
+    <h2>You might find <a href="https://en.wikipedia.org/wiki/Cryptography">this</a> useful.</h2>
+    
+    {% comment %} <div class="image-container"><img src="/static/images/images1/gift1.png" alt="Description of image" width="500" height="300"></div> {% endcomment %}
+
+    <div class="container">
+    <form class="form-inline" method="POST" action="/{{id}}/level1gift">
+      {% csrf_token %} 
+      <button type="submit" id="splbutton">Level-2</button>    
+    </form>
+  </div>
+</div>
+  </body>
+</html>

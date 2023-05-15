@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{%static 'css/level3.css'%}">
+    <title>LEVEL-3</title>
+  </head>
+  <body>
+    <h2>Dicsussion</h2>
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+          <form action="/{{id}}/level3" method="POST">
+            {%csrf_token%}
+            <div class="formbold-mb-5">
+              <label for="q1" class="formbold-form-label">Where does yesterday comes after today ?</label>
+              <input
+                type="text"
+                name="q1"
+                id="name"
+                placeholder="Answer"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="q2" class="formbold-form-label"> What  is the ordered list of elements of finite possible plaintexts, finite possible cyphertexts, finite possible keys, and the encryption and decryption algorithms that correspond to each key? </label>
+              <input
+                type="text"
+                name="q2"
+                id="phone"
+                placeholder="We assume you went through the article in Round1 gift"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="q3" class="formbold-form-label">What is the missing color? </label>
+              <input
+                type="text"
+                name="q3"
+                id="q3"
+                class="formbold-form-input"
+              />
+            </div>
+      
+            <div>
+              <button class="formbold-btn">I am Done</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="{%static 'js/levelx.js'%}"></script>
+  </body>
+</html> 
+
+

@@ -1,0 +1,172 @@
+ body {
+  /* background: linear-gradient(to right, red 0%, red 33.33%,yellow 33.33%,yellow 66.66%, blue 66.66%, blue 100%); */
+  background-image: url('../images/images1/emojiback.png');
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  height:100vh;
+}
+ .button2 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/left.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button1 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-fingers-crossed.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button3 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-backface-up.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button4 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-facing-fist.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button5 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-hand-pen.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button6 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-victory.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button7 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-yo.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button8 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ }  
+ .button9 { 
+  width: 25px; 
+  height:25px;
+  border: 1px solid black;
+  background-color: white;
+  background-image: url('../images/images1/right-fist.png');
+  background-size: contain;
+  border:none;
+  cursor:pointer;
+ } 
+
+label{
+  color:blue;
+ 
+}
+#grid{
+  grid-template-columns: repeat(15, 1fr);
+  display: grid;
+  margin-top:50px;
+  margin:50px auto; 
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width:30%;
+}
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width:50%;
+  margin-left:400px;
+}
+.container{
+  margin:auto;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0; 
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius:10px;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  margin-right: 20px;
+  border-radius:10px;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+  cursor:pointer;
+ 
+}
+p{
+text-align:center;
+color:blue;
+font-weight: bold;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+

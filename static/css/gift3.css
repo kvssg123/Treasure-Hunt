@@ -1,0 +1,22 @@
+.form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    margin-right: 20px;
+    border-radius:10px;
+    text-align:center;
+  }
+  .image-container{
+    margin:auto;
+    text-align:center;
+  }
+  body{
+    background: linear-gradient(to right, red 0%, red 33.33%,yellow 33.33%,yellow 66.66%, blue 66.66%, blue 100%);
+  }
+  .container{
+    text-align:center;
+  }
+  #splbutton{
+    cursor:pointer;
+  }

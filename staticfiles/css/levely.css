@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(to right, 	#fdb913 0%, #fdb913 33.33%, #006a44 33.33%,#006a44 66.66%, #c1272d 66.66%, #c1272d 100%);
+    height:100vh;
+  }
+  body {
+    background-color: #f1f1f1;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.statement {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container{
+    margin:auto;
+  }
+  
+  /* Add some margins for each label */
+  .form-inline label {
+    margin: 5px 10px 5px 0; 
+  }
+  
+  /* Style the input fields */
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius:10px;
+  }
+  
+  /* Style the submit button */
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    margin-right: 20px;
+    border-radius:10px;
+  }
+  
+  .form-inline button:hover {
+    background-color: royalblue;
+    cursor:pointer;
+   
+  }
+
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  
+  /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .form-container{
+    margin-top:30px;
+  }
+  label{
+    color:white;
+    font-weight: bold;
+  }
+  
+  

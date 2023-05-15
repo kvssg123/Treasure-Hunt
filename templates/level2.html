@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{%static 'css/level2.css'%}">
+    <title>LEVEL-2</title>
+  </head>
+  <body>
+    {% comment %} <div class="heading"><h2>There are many things like chinese bamboo tree!!!!!!</h2>
+    </div> {% endcomment %}
+    <div class="hint"><p>*Observation is the key</p></div>
+    <div class="container">
+    <form method="POST" action="/{{id}}/level2">
+        {%csrf_token%}
+        <div class="input-container">
+          <input type="text" placeholder="Enter the national sport (en)" name="sport" />
+          <input type="submit" value="Submit" />
+        
+        </div>
+    </form>
+    
+      </div>
+      <button id="notseen" onClick="changeColor()"></button>
+      <div class="secret">
+         <p>N46</p>
+        <p>E25</p>
+    </div>
+    <script src="{%static 'js/level2.js'%}"></script>
+  </body>
+</html> 
+
+

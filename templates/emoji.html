@@ -1,0 +1,27 @@
+{%load static%}
+{% load humanize %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LEVEL-1</title>
+    <link rel="stylesheet" href="{%static 'css/emoji.css'%}" />
+  </head>
+  <body>
+    <p>*One emoji doesnot follow the logic that others follow.Enter the row and column number of that emoji. </p>
+    <div id="grid"></div>
+    <div class="container">
+    <form class="form-inline" method="POST" action="/{{id}}/level1">
+      {% csrf_token %} 
+      <button type="submit" id="splbutton">Submit</button>
+      <input type="hidden" name="rownum" id="my-hidden-input-row">
+      <input type="hidden" name="colnum" id="my-hidden-input-col">
+      <label for="rownum">Row number:</label>
+      <input type="text" id="rownum" placeholder="Row number from top" name="row">
+      <label for="colnum">Column Number:</label>
+      <input type="text" id="colnum" placeholder="Column Number from left" name="col">
+    </form>
+  </div>
+    <script src="{%static 'js/emoji.js'%}"></script>
+  </body>
+</html>

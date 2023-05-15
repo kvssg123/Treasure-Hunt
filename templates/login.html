@@ -1,0 +1,47 @@
+{%load static%}
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700">
+    <link rel="stylesheet" href="{%static 'css/login.css'%}">
+  
+  </head>
+  <body>
+  <!-- partial:index.partial.html -->
+  <div class="login-form">
+    <form id="myform"  method="POST" action="logincheck/">
+        {% csrf_token %} 
+      <h1>Login</h1>
+      <input type="hidden" name="button" id="my-hidden-input">
+      <div class="content">
+        <div class="input-field">
+          <input type="email" placeholder="Email" autocomplete="nope" name="email">
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" autocomplete="new-password" name="password">
+        </div>
+        {% comment %} <a href="#" class="link">Forgot Your Password?</a> {% endcomment %}
+      </div>
+      <div class="action">
+        <button id="register">Register</button>
+        <button id="login">Sign in</button>
+      </div>
+    </form>
+  </div>
+  <div class="instructions">
+    <h4 class="statements">Instructions</h4>
+    <p class="statements">1. You have to play totally 5 levels </p>
+    <p class="statements">2. After completing each level, a new page will be displayed that may contain hints that could be useful for solving the upcoming rounds. </p>
+    <p class="statements">3. Try to connect everything . Levels might be interlinked to each other</p>
+    <p class="statements">4. If you navigate back, you have to start all over again.. You may not be able to access next levels</p>
+    <p class="statements">5. If the same page is displayed again after you submit your answer, it implies that your answer was incorrect.</p>
+    <p class="statements">6. If you are a new user register first after that you will be again redirected to this page.</p>
+    <p class="statements">7. IThe timer remains still on if you stop the game in middle. It ends only when you finish</p>
+    <h2 class="statements">All the best</h2>
+  </div>
+  <!-- partial -->
+    <script src="{%static 'js/login.js'%}"></script>
+  
+  
+  
+  </body></html>

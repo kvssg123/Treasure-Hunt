@@ -1,0 +1,45 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LEVEL-4</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/levely.css'%}">
+</head>
+<body>
+    <h1>Lets Explore!</h1>
+	<p>*use the below hints and fill the text box given to move to nextround</p>
+	<div class="statement">
+		<p>Smallest three digit number product of digits is 0 and sum of digits is 6</p>
+	</div>
+	<div class="statement">
+		<p>If you are bored go and have a read about white storks</p>
+	</div>
+	<div class="statement">
+	<p> vilnius desufnoc teg t'noD</p>
+	</div>
+	<div class="statement">
+		<p>Music</p>
+	</div>
+	<div class="statement">
+		<p>How about having an instrument that produces music without touch</p>
+	</div>
+	<div class="statement">
+		<p id="link">One more <a href="https://en.wikipedia.org/wiki/Doodle">clue</a></p>
+	</div>
+	<div class="statement">
+		<p>Happy birthday</p>
+	</div>
+    <div class="form-container">
+		<form class="form-inline" action="/{{id}}/level4" method="POST">
+			{% csrf_token %} 
+			<label for="sequence">Enter the third lesson you learnt:</label>
+			<input type="text" id="sequence" placeholder="Ignore #" name="sequence">	
+			<button type="submit" id="splbutton">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
+

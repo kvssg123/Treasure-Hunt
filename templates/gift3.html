@@ -1,0 +1,21 @@
+{%load static%}
+{% load humanize %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GIFT-3</title>
+    <link rel="stylesheet" href="{%static 'css/gift2.css'%}" />
+  </head>
+  <body>
+    
+    <div class="image-container"><img src="/static/images/images1/gift1.png" alt="Description of image" width="500" height="300"></div>
+
+    <div class="container">
+    <form class="form-inline" method="POST" action="/{{id}}/level3gift">
+      {% csrf_token %} 
+      <button type="submit" id="splbutton">Level-4</button>    
+    </form>
+  </div>
+  </body>
+</html>

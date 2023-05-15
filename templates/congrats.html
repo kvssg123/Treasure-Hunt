@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Congratulations</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/congrats.css'%}">
+</head>
+<body>
+    <div class="user-details-container">
+        <h2>Player Details</h2>
+        <div class="user-details">
+          <div class="user-info">
+            <p>Username:  {{username}}</p>
+            <p>Email:     {{email}}</p>
+            <p>Your time: {{totalseconds}} seconds</p>
+            <p>Best time: {{best_time}} seconds</p>
+            <p>Position:  {{position}} (based on best time)</p>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
+
