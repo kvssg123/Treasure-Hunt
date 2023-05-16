@@ -24,9 +24,24 @@ This round presents a gibberish text that lacks any apparent meaning. To progres
 ##### Clue-2 : An image of key 
 ##### Clue-3 : A rail image
 ##### Clue-4 : Figure showing 5
-By putting all these clues at one place. It is some cipher with key=5 and the rail images tells the name of the cipher as **rail cipher**. A small amount of analysis of all clues is suffcient to solve this. The answer is **congratualtionsonclearingthelastroundyoucanseetheresultsinnextpage**
+By putting all these clues at one place. It is some cipher with key=5 and the rails image tells the name of the cipher as **rail cipher**. A small amount of analysis of all clues is sufficient to solve this. The answer is **congratualtionsonclearingthelastroundyoucanseetheresultsinnextpage**
 
-Upon completing all the rounds, the player's information is displayed, including their rank compared to other users, the time taken to solve each question, and the player's personal best time.
+Upon completing all the rounds, the player's information is displayed, including their rank compared to other users, the time taken to finish the game, and the player's personal best time.
+
+### Admin Dashboard - [Admin Dashboard](http://13.49.138.209:8000/admin) 
+The admin dashboard mentioned above provides a user-friendly interface to access and manage the database. It allows the admin to track the performance of all the users, including their position relative to others, time taken to solve the questions, and best time. The dashboard also includes various functionalities, such as sorting users based on their best time or IDs. Furthermore, the admin can directly manipulate the data in the database, including manipulating the player data.
+
+### Features Included :
+- The project contains clues for solving upcoming rounds and the user cannot navigate to next round till he finishes the current round.
+- Admin dashboard is cusomized cointaining necessary features.
+- Anyone with email addess can register as player.
+- The player's progress is restored.
+- All the details like time taken by player, his best time, his position relative to other users etc only at the end of last round.
+
+### Steps to Set-up the project
+- Clone the repository or download it as zip file in your local machine.
+- Move to the directory where the file **manage.py** is present.
+- Execute **python manage.py runserver** and the application starts in local host.
 
 
 
