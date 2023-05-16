@@ -1,5 +1,5 @@
 # Treasure-Hunt
-The main aim of this project is to assess the soft-skills of a player by through puzzles and riddles 
+The objective of this project is to assess the soft-skills of a player through puzzles and riddles 
 ## How To Solve
 ### Level-1 : 
 #### Soft-skills assessed : Observation
