@@ -40,7 +40,8 @@ The admin dashboard mentioned above provides a user-friendly interface to access
 
 ### Steps to Set-up the project
 - Clone the repository or download it as zip file in your local machine.
-- Move to the directory where the file **manage.py** is present.
+- Move to the directory where the file **manage.py** is present and open command prompt.
+- Install the necessary dependencies from requirements.txt **pip install -r requirements.txt**
 - Execute **python manage.py runserver** and the application starts in local host.
 
 
